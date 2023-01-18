@@ -1,12 +1,15 @@
 Package: wbsecthemes
-Title: What the Package Does (One Line, Title Case)
+Title: Chart and Table themes and tools, in the style of World Bank Group's Corporate Secretariat
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Andres", "Perez Lopez",
+    email = "aperezlopez@worldbank.org",
+    role = c("aut", "cre"))
+Description: Compilation of color styles and palettes, fonts, 'ggplot' themes,
+    'gt' themes, and other utilities, to create charts, tables, and presentations
+    in the style of the World Bank Group's Corporate Secretariat, following the
+    World Bank Groups brand identity guidelines
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
