@@ -1,54 +1,103 @@
 #' A [ggplot] theme with a specific
 #'
-#' @param axes
-#' @param grid
-#' @param legend_position
-#' @param caption_position
-#' @param title_family
-#' @param subtitle_family
-#' @param axis_title_family
-#' @param axis_text_family
-#' @param legend_title_family
-#' @param legend_text_family
-#' @param facet_title_family
-#' @param caption_family
-#' @param title_size
-#' @param subtitle_size
-#' @param axis_title_size
-#' @param axis_text_size
-#' @param legend_title_size
-#' @param legend_text_size
-#' @param facet_title_size
-#' @param caption_size
-#' @param title_color
-#' @param subtitle_color
-#' @param axis_title_color
-#' @param axis_text_color
-#' @param legend_title_color
-#' @param legend_text_color
-#' @param facet_title_color
-#' @param caption_color
-#' @param background_color
-#' @param axis_line_color
-#' @param grid_color
+#' @param axes A string indicating which axes should have lines and ticks.
+#'   Specify which axes to show by including the matching characters in the
+#'   string: "t" for top, "r" for right, "b" for bottom, "l" for left. You will
+#'   need to ensure this argument is consistent with the axes settings in your
+#'   plot for the lines and ticks to be displayed. The default is "", meaning
+#'   no ticks no lines for the vertical or horizontal axes are shown by default.
+#' @param grid A string indicating which gridlines should be shown. Specify
+#'   the gridlines to show by including the matching characters in the string:
+#'   "h" for horizontal, "v" for vertical. The default is an empty string,
+#'   meaning no gridlines are shown by default.
+#' @param legend_position A string indicating the position of the legend. Valid
+#'   positions are "top", "right", "bottom", "left", "top-right", "top-left",
+#'   "bottom-right", "bottom-left", and "none". The default is "right".
+#' @param caption_position A string indicating the horizontal position of the
+#'   caption. Valid positions are "left" or "right". The default is "right".
+#' @param title_family A string indicating the font-family to use for the
+#'   title. The default is "National-LFSN Semibd".
+#' @param subtitle_family A string indicating the font-family to use for the
+#'   subtitle. The default is "National-LFSN Book".
+#' @param axis_title_family A string indicating the font-family to use for
+#'   axis titles. The default is "Open Sans".
+#' @param axis_text_family A string indicating the font-family to use for
+#'   axis text. The default is "Open Sans".
+#' @param legend_title_family A string indicating the font-family to use for
+#'   legend titles. The default is "Open Sans".
+#' @param legend_text_family A string indicating the font-family to use for
+#'   legend text. The default is "Open Sans".
+#' @param facet_title_family A string indicating the font-family to use for
+#'   facet titles. The default is "Open Sans".
+#' @param caption_family A string indicating the font-family to use for
+#'   captions. The default is "National-LFSN Book".
+#' @param title_size An integer indicating the font size to use for the title
+#'   in points. The default is 18 points.
+#' @param subtitle_size An integer indicating the font size to use for the
+#'   subtitle in points. The default is 14 points.
+#' @param axis_title_size An integer indicating the font size to use for axis
+#'   titles in points. The default is 11 points.
+#' @param axis_text_size An integer indicating the font size to use for axis
+#'   text in points. The default is 10 points.
+#' @param legend_title_size An integer indicating the font size to use for
+#'   legend titles in points. The default is 10 points.
+#' @param legend_text_size An integer indicating the font size to use for
+#'   legend text in points. The default is 10 points.
+#' @param facet_title_size An integer indicating the font size to use for
+#'   facet titles in points. The default is 10 points.
+#' @param caption_size An integer indicating the font size to use for captions
+#' in points. The default is 12 points.
+#' @param title_color An RGB hex string indicating the color to use for the
+#'   title. The default is "#006548".
+#' @param subtitle_color An RGB hex string indicating the color to use for the
+#'   subtitle. The default is "#006548".
+#' @param axis_title_color An RGB hex string indicating the color to use for
+#'   axis titles. The default is "#404040".
+#' @param axis_text_color An RGB hex string indicating the color to use for
+#'   axis text. The default is "#404040".
+#' @param legend_title_color An RGB hex string indicating the color to use for
+#'   legend titles. The default is "#404040".
+#' @param legend_text_color An RGB hex string indicating the color to use for
+#'   legend text. The default is "#404040".
+#' @param facet_title_color An RGB hex string indicating the color to use for
+#'   facet titles. The default is "#404040".
+#' @param caption_color An RGB hex string indicating the color to use for
+#'   captions. The default is "#404040".
+#' @param background_color An RGB hex string indicating the color to use for
+#'   the background. The default is "#f0eeed".
+#' @param axis_line_color An RGB hex string indicating the color to use for
+#'   the axis lines. The default is "#a6a6a6".
+#' @param grid_color An RGB hex string indicating the color to use for the
+#'   gridlines. The default is "#dad5d1".
+#' @return A ggplot2 theme that implements the Commons Library style.
+#' @keywords internal
 #'
-#' @return
-#' @export
+#' @examples \dontrun{
 #'
-#' @examples
+#' library(tidyverse)
+#' iris |>
+#' ggplot(aes(x = Species, y = Sepal.Length)) +
+#' geom_point(color = sec_color("secpink")) +
+#' labs(title = "Figure 1. Iris Data Set",
+#'      subtitle = "Lorem ipsum is simply dummy text that is used in the typesetting industry",
+#'      x = "Species of Iris",
+#'      y = "Length of the Sepals") +
+#' theme_wbgsec() +
+#' }
+#'
 theme_wbgsec <- function(
     axes = "",
     grid = "",
     legend_position = "right",
     caption_position = "right",
-    title_family = "Lemon Milk Pro",
-    subtitle_family = "Open Sans",
-    axis_title_family = "Uniform",
-    axis_text_family = "Open Sans",
-    legend_title_family = "Uniform",
-    legend_text_family = "Open Sans",
-    facet_title_family = "Uniform",
-    caption_family = "Open Sans",
+    title_family = "General Sans",
+    subtitle_family = "Switzer",
+    axis_title_family = "Satoshi",
+    axis_text_family = "Satoshi",
+    legend_title_family = "Satoshi",
+    legend_text_family = "Satoshi",
+    facet_title_family = "Switzer",
+    caption_family = "General Sans",
     title_size = 18,
     subtitle_size = 11,
     axis_title_size = 10,

@@ -55,7 +55,7 @@ sec_color <- function(which_color) {
 #' The complete palette of colors can be called using
 #' `wbg_colors()`
 #'
-#' @param which_color
+#' @param which_color The color for which HEX code is returned
 #'
 #' @return The HEX code string of the color in the palette
 #' @export
