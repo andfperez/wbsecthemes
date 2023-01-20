@@ -45,4 +45,3 @@ library(gt)
 
 }
 }
-\keyword{internal}

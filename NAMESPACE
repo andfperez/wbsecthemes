@@ -2,4 +2,6 @@
 
 export(load_fonts)
 export(sec_color)
+export(sec_tabtheme)
+export(theme_wbgsec)
 export(wbg_color)

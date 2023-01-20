@@ -160,4 +160,3 @@ theme_wbgsec() +
 }
 
 }
-\keyword{internal}
