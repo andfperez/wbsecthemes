@@ -145,18 +145,3 @@ A ggplot2 theme that implements the Commons Library style.
 \description{
 A \link{ggplot} theme with a specific
 }
-\examples{
-\dontrun{
-
-library(tidyverse)
-iris |>
-ggplot(aes(x = Species, y = Sepal.Length)) +
-geom_point(color = sec_color("secpink")) +
-labs(title = "Figure 1. Iris Data Set",
-     subtitle = "Lorem ipsum is simply dummy text that is used in the typesetting industry",
-     x = "Species of Iris",
-     y = "Length of the Sepals") +
-theme_wbgsec() +
-}
-
-}

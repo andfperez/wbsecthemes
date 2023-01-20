@@ -17,11 +17,8 @@
 #' @param satoshi_regular path to Satoshi font (regular)
 #' @param satoshi_bold path to Satoshi font (bold)
 #' @param satoshi_italic path to Satoshi font (italic)
-#' @param satoshi_bolditalic path to Satoshi font (bolditalic)
 #' @param open_sans_regular path to Open Sans font (regular)
 #' @param open_sans_italic path to Open Sans font (italic)
-#'
-#' @keywords internal
 #' @export
 #'
 load_fonts <- function(
@@ -83,5 +80,3 @@ load_fonts <- function(
   showtext::showtext_auto()
   showtext::showtext_opts(dpi = 300)
 }
-
-load_fonts()

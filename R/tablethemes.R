@@ -28,7 +28,6 @@ library(gt)
 #'   &nbsp&nbspand typesetting <i>industry</i>.<br><br>")) |>
 #'  tab_source_note(source_note = md(
 #'  "**Source:** Corporate Secretariat | **Data:** mtcars")) |>
-#'
 #'  sec_tabtheme()
 #'
 #' }

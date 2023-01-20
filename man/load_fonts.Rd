@@ -51,8 +51,6 @@ load_fonts(
 \item{open_sans_regular}{path to Open Sans font (regular)}
 
 \item{open_sans_italic}{path to Open Sans font (italic)}
-
-\item{satoshi_bolditalic}{path to Satoshi font (bolditalic)}
 }
 \description{
 WBG Secretariat - Style fonts
@@ -62,4 +60,3 @@ Subtitles: Switzer Bold or Regular
 Spanners, stubs or groupings (or column 1) and captions: Satoshi
 Numbers and figures: Open Sans
 }
-\keyword{internal}
