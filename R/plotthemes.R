@@ -70,7 +70,7 @@
 #' @param grid_color An RGB hex string indicating the color to use for the
 #'   gridlines. The default is "#dad5d1".
 #' @return A ggplot2 theme that implements the Commons Library style.
-#' @keywords internal
+#' @export
 #'
 #' @examples \dontrun{
 #'

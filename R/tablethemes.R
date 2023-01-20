@@ -6,7 +6,7 @@ library(gt)
 #' @param ... Special to pass undetermined number of arguments
 #'
 #' @return A table styled using the WB SEC theme
-#' @keywords internal
+#' @export
 #'
 #' @examples \dontrun{
 #'
@@ -126,5 +126,5 @@ sec_tabtheme <- function(gt_object, ...) {
       ),
       locations = cells_body(columns = 1)
     )
-
+sec_tabtheme
 }

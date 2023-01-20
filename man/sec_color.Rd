@@ -16,6 +16,8 @@ The hex code of each of the colors in the palette
 \code{sec_color} returns the hex code(s) that correspond(s) to
 the name(s) of the color(s) in the SEC palette that are
 present in its arguments.
+The SEC palette includes 5 different colors, named:
+\code{secpink}, \code{secorange}, \code{secgreen}, \code{seccyan}, and \code{secblue}.
 }
 \details{
 Either a single character string or a vector of strings

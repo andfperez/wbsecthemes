@@ -27,6 +27,9 @@ wbg_pal <- c(
 #' `sec_color` returns the hex code(s) that correspond(s) to
 #' the name(s) of the color(s) in the SEC palette that are
 #' present in its arguments.
+#' The SEC palette includes 5 different colors, named:
+#' `secpink`, `secorange`, `secgreen`, `seccyan`, and `secblue`.
+#'
 #'
 #' Either a single character string or a vector of strings
 #' can be passed through, with the function returning an equal
