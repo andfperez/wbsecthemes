@@ -21,7 +21,7 @@ load_fonts(
   satoshi_regular = file.path(here::here("Fonts", "Satoshi-Regular.otf")),
   satoshi_bold = file.path(here::here("Fonts", "Satoshi-Bold.otf")),
   satoshi_italic = file.path(here::here("Fonts", "Satoshi-Italic.otf")),
-  open_sans_regular = file.path(here::here("Fonts", "OpenSans-Regular.ttf")),
+  open_sans_light = file.path(here::here("Fonts", "OpenSans-Light.ttf")),
   open_sans_italic = file.path(here::here("Fonts", "OpenSans-Italic.ttf"))
 )
 }
@@ -48,9 +48,9 @@ load_fonts(
 
 \item{satoshi_italic}{path to Satoshi font (italic)}
 
-\item{open_sans_regular}{path to Open Sans font (regular)}
-
 \item{open_sans_italic}{path to Open Sans font (italic)}
+
+\item{open_sans_regular}{path to Open Sans font (regular)}
 }
 \description{
 WBG Secretariat - Style fonts

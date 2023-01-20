@@ -47,8 +47,8 @@ load_fonts <- function(
     satoshi_italic = file.path(here::here("Fonts",
                                           "Satoshi-Italic.otf")),
 
-    open_sans_regular = file.path(here::here("Fonts",
-                             "OpenSans-Regular.ttf")),
+    open_sans_light = file.path(here::here("Fonts",
+                             "OpenSans-Light.ttf")),
     open_sans_italic = file.path(here::here("Fonts",
                             "OpenSans-Italic.ttf"))
 ){
@@ -74,7 +74,7 @@ load_fonts <- function(
 
   sysfonts::font_add(
     family = "Open Sans",
-    regular = open_sans_regular,
+    regular = open_sans_light,
     italic = open_sans_italic)
 
   showtext::showtext_auto()
