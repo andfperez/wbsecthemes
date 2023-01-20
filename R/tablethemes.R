@@ -126,5 +126,4 @@ sec_tabtheme <- function(gt_object, ...) {
       ),
       locations = cells_body(columns = 1)
     )
-sec_tabtheme
 }
